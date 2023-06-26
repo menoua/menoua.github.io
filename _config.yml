@@ -1,1 +1,56 @@
-theme: jekyll-theme-cayman
+# site settings
+
+title: Menoua Keshishian
+description: PhD Candidate, Columbia University
+taglong: PhD Candidate, Columbia University
+tagshort: PhD Candidate
+url: https://menoua.github.io
+baseurl: ""
+permalink: /:categories/:title/
+repo: https://github.com/menoua/menoua.github.io
+collections:
+  publications:
+    output: false
+  projects:
+    output: true
+    sort_by: sort_key
+
+# author settings
+
+author:
+  name: Menoua Keshishian
+  email: menoua.k@columbia.edu
+photo: /assets/photo.png
+
+# build settings
+
+exclude:
+  - LICENSE
+  - README.md
+
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate-v2
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+whitelist:
+  - jekyll-sitemap
+
+sass:
+  sass_dir: _sass
+  sourcemap: never
+
+feed:
+  path: atom.xml
+
+# autopages:
+#   enabled: false
+#
+# pagination:
+#   enabled: true
+#   per_page: 1
+#   sort_reverse: true
+#   permalink: /:num/
+#   title: ":title &middot; Page :num"

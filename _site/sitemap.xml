@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>http://0.0.0.0:4000/projects/dstrf/</loc>
+<lastmod>2023-06-26T23:06:39+00:00</lastmod>
+</url>
+<url>
+<loc>http://0.0.0.0:4000/projects/pytci/</loc>
+<lastmod>2023-06-26T23:06:39+00:00</lastmod>
+</url>
+<url>
+<loc>http://0.0.0.0:4000/projects/naplib-python/</loc>
+<lastmod>2023-06-26T23:06:39+00:00</lastmod>
+</url>
+<url>
+<loc>http://0.0.0.0:4000/projects/linguistic_encoding/</loc>
+<lastmod>2023-06-26T23:06:39+00:00</lastmod>
+</url>
+<url>
+<loc>http://0.0.0.0:4000/projects/cog-task/</loc>
+<lastmod>2023-06-26T23:06:39+00:00</lastmod>
+</url>
+<url>
+<loc>http://0.0.0.0:4000/cv/</loc>
+</url>
+<url>
+<loc>http://0.0.0.0:4000/</loc>
+</url>
+</urlset>

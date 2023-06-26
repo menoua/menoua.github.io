@@ -1,0 +1,21 @@
+<div id="particles-js" class="fullscreen">
+  <div class="jumbotron text-center">
+    {% if site.photo %}
+    <img class="particles-photo" src="{{ site.photo }}" />
+    {% endif %}
+    <h1 class="particles-title">{{ site.title }}</h1>
+    <h1 class="particles-subtitle">{{ site.taglong }}</h1>
+    <div class="nowrap">
+      <a class="particles-icon" href="https://linkedin.com/in/menoua">{% include svg/linkedin.svg %}</a>
+      <a class="particles-icon" href="https://github.com/menoua">{% include svg/github-outline.svg %}</a>
+      <a class="particles-icon" href="https://scholar.google.com/citations?user=oRDR7NYAAAAJ&hl=en&oi=ao">{% include svg/google-scholar.svg %}</a>
+      <a class="particles-icon" href="https://www.researchgate.net/profile/Menoua-Keshishian">{% include svg/research-gate.svg %}</a>
+      <a class="particles-icon" href="https://orcid.org/0000-0003-0368-288X">{% include svg/orcid.svg %}</a>
+      <!-- <a class="particles-icon" href="https://www.scopus.com/authid/detail.uri?authorId=57218117964">{% include svg/scopus-circled.svg %}</a> -->
+      <a class="particles-icon" href="cv">{% include svg/cv-circled.svg %}</a>
+    </div>
+  </div>
+  <div class="particles-scroll">
+    <a class="particles-icon" href="#scroll">{% include svg/nav-arrow-down.svg %}</a>
+  </div>
+</div>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+    Menoua Keshishian &middot; CogTask
+    
+  </title>
+
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/open-color.min.css">
+  <link rel="stylesheet" href="/assets/css/syntax.css">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="manifest" href="/assets/site.webmanifest">
+  <link rel="alternate" type="application/atom+xml" title="Menoua Keshishian" href="/atom.xml">
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$', '$'], ["\\(", "\\)"] ],
+        displayMath: [ ['$$', '$$'], ["\\[", "\\]"] ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+      //,
+      //displayAlign: "left",
+      //displayIndent: "2em"
+    });
+  </script>
+  <script
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"
+    type="text/javascript" >
+  </script>
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="CogTask" />
+<meta name="author" content="Menoua Keshishian" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An application written in Rust for designing and running cognitive psychology tasks/experiments, with the goals of being low-latency and easy-to-use." />
+<meta property="og:description" content="An application written in Rust for designing and running cognitive psychology tasks/experiments, with the goals of being low-latency and easy-to-use." />
+<link rel="canonical" href="http://0.0.0.0:4000/projects/cog-task/" />
+<meta property="og:url" content="http://0.0.0.0:4000/projects/cog-task/" />
+<meta property="og:site_name" content="Menoua Keshishian" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-06-26T23:06:39+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="CogTask" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Menoua Keshishian"},"dateModified":"2023-06-26T23:06:39+00:00","datePublished":"2023-06-26T23:06:39+00:00","description":"An application written in Rust for designing and running cognitive psychology tasks/experiments, with the goals of being low-latency and easy-to-use.","headline":"CogTask","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4000/projects/cog-task/"},"url":"http://0.0.0.0:4000/projects/cog-task/"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+
+<body>
+
+  
+  
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col col-sm-10 col-md-8 col-lg-6">
+        
+
+
+<article>
+  <header>
+  <div>
+    <a class="site-title" href="/">Menoua Keshishian</a>
+    <small>
+      
+      PhD Candidate
+      
+    </small>
+  </div>
+  <a id="theme-toggle" class="toggle-icon" onclick="modeSwitcher()"></a>
+</header>
+
+  <main>
+    <div class="project-title-row">
+      <div class="project-title">
+        <h1 class="post-title">CogTask</h1>
+      </div>
+      <div class="project-links">
+        <a href=https://github.com/menoua/cog-task>[Code]</a>
+        <a href=https://docs.rs/cog-task/latest/cog_task/>[Docs]</a>
+        
+      </div>
+    </div>
+    
+    <div class="project-subtitle">General-purpose low-latency tool for designing cognitive tasks.</div>
+    
+
+    <img
+      src="/assets/cog-task.png"
+      style="float: left; margin-right: 10px;"
+    />
+
+    
+      <p>This tool provides an easy way to write and execute different types of interactive actions that are usually useful in experiments involving cognitive sciences. E.g., display an image/video, play sounds, show text, measure reactions to events (through key presses or clicks), measure action completion times, ask questions, etc. The existing tools for this purpose are either out-dated, closed-source, or written in a low-performance scripting language like javascript. This tool aims to be modern and performant, while at the same time maintaining ease-of-use.</p><p>To achieve native performance, this application is written in <a href="https://www.rust-lang.org/">Rust</a> using the <a href="https://github.com/emilk/egui">egui</a> graphical framework. To generate a task, a description file in the rust object notation (<a href="https://github.com/ron-rs/ron">RON</a>; see “Tooling” section of its README for syntax highlighting) format should be created by the experiment designer. The task file consists of three main fields: name, configuration, and blocks (self-contained pieces of the experiment that should be run in one sitting). Each block in itself consists of three main fields: name, configuration (overriding the task configuration), and actions. The actions are specified in the form of a tree (graph) with nodes of type <code class="language-plaintext highlighter-rouge">Action</code>.</p><p>For usage examples and installation instructions see the GitHub <a href="https://github.com/menoua/cog-task">page</a>.</p><p><strong><em>DISCLAIMER:</em></strong> <em>While this tool is functional and feature-rich, this project is highly experimental and its API is subject to frequent change. Use at your own risk.</em></p>
+    
+
+    
+  </main>
+  <footer>
+  <small>&copy; <time datetime="2023-06-26T23:06:39+00:00">2023</time>
+    Menoua Keshishian. All rights reserved.</small>
+</footer>
+
+</article>
+
+      </div>
+    </div>
+  </div>
+  <script src="/assets/js/bootstrap.min.js"></script>
+  
+  <script src="/assets/js/darkmode.js"></script>
+  
+  
+</body>
+
+</html>

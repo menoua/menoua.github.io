@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+    Menoua Keshishian &middot; dSTRF
+    
+  </title>
+
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/open-color.min.css">
+  <link rel="stylesheet" href="/assets/css/syntax.css">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="manifest" href="/assets/site.webmanifest">
+  <link rel="alternate" type="application/atom+xml" title="Menoua Keshishian" href="/atom.xml">
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$', '$'], ["\\(", "\\)"] ],
+        displayMath: [ ['$$', '$$'], ["\\[", "\\]"] ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+      //,
+      //displayAlign: "left",
+      //displayIndent: "2em"
+    });
+  </script>
+  <script
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"
+    type="text/javascript" >
+  </script>
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="dSTRF" />
+<meta name="author" content="Menoua Keshishian" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A python toolbox to analyze feed forward neural networks trained to predict biological neural responses to sound, by computing the locally linear operations they perform on the input." />
+<meta property="og:description" content="A python toolbox to analyze feed forward neural networks trained to predict biological neural responses to sound, by computing the locally linear operations they perform on the input." />
+<link rel="canonical" href="http://0.0.0.0:4000/projects/dstrf/" />
+<meta property="og:url" content="http://0.0.0.0:4000/projects/dstrf/" />
+<meta property="og:site_name" content="Menoua Keshishian" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-06-26T23:06:39+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="dSTRF" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Menoua Keshishian"},"dateModified":"2023-06-26T23:06:39+00:00","datePublished":"2023-06-26T23:06:39+00:00","description":"A python toolbox to analyze feed forward neural networks trained to predict biological neural responses to sound, by computing the locally linear operations they perform on the input.","headline":"dSTRF","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4000/projects/dstrf/"},"url":"http://0.0.0.0:4000/projects/dstrf/"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+
+<body>
+
+  
+  
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col col-sm-10 col-md-8 col-lg-6">
+        
+
+
+<article>
+  <header>
+  <div>
+    <a class="site-title" href="/">Menoua Keshishian</a>
+    <small>
+      
+      PhD Candidate
+      
+    </small>
+  </div>
+  <a id="theme-toggle" class="toggle-icon" onclick="modeSwitcher()"></a>
+</header>
+
+  <main>
+    <div class="project-title-row">
+      <div class="project-title">
+        <h1 class="post-title">dSTRF</h1>
+      </div>
+      <div class="project-links">
+        <a href=https://github.com/naplab/DSTRF>[Code]</a>
+        
+        <a href=http://naplab.ee.columbia.edu/dstrf.html>[Webpage]</a>
+      </div>
+    </div>
+    
+    <div class="project-subtitle">Toolbox for analyzing local spectro-temoral receptive field of neurons.</div>
+    
+
+    <img
+      src="/assets/dstrf.png"
+      style="float: left; margin-right: 10px;"
+    />
+
+    
+      <p>A python toolbox for dynamic spectrotemporal receptive field (dSTRF) analysis, as introduced in Keshishian et al (2020). In short, dSTRF is a method to analyze which parts of the input at any time point are being used by a feed-forward deep neural network to predict the response.</p><p>In mathematical terms, for a nonlinear model \(f(\cdot)\), input at time \(t\), \(X_t\), and output at time \(t\), \(Y_t = f(X_t)\), the dSTRF is the locally linear transformation \(W_t\), such that: \(Y_t = W_t X_t\). Now, if \(f(\cdot)\) is a linear function, \(W_t\) will be the same for all \(t\). If not, the linearized function applied to the input (\(W_t\)) will depend on the given stimulus (\(X_t\)), which is the case in a deep neural network.</p><p>A linear function mapping the auditory stimuli in the spectrotemporal domain (i.e., auditory spectrograms) to the neural activity recorded from the biological brain is called a spectrotemporal receptive field (STRF). Since we use a nonlinear mapping between the stimulus and response, and characterize it as a locally linear function at each time point, we call this a dynamic spectrotemporal receptive field (dSTRF).</p>
+    
+
+    
+      <h2>Related publications</h2>
+      
+        <p>
+          <a href="https://www.sciencedirect.com/science/article/pii/S1053811922009405?via%3Dihub"> Deep neural networks effectively model neural adaptation to changing background noise and suggest nonlinear noise filtering methods in auditory cortex. </a>
+          <span class="authors"> Mischler, G, Keshishian, M, Bickel, S, Mehta, AD, Mesgarani, N. </span>
+          <span class="journal">
+            NeuroImage (2023)
+          </span>
+        </p>
+      
+        <p>
+          <a href="https://elifesciences.org/articles/53445"> Estimating and interpreting nonlinear receptive field of sensory neural responses with deep neural network models. </a>
+          <span class="authors"> Keshishian, M, Akbari, H, Khalighinejad, B, Herrero, JL, Mehta, AD, Mesgarani, N. </span>
+          <span class="journal">
+            eLife (2020)
+          </span>
+        </p>
+      
+    
+  </main>
+  <footer>
+  <small>&copy; <time datetime="2023-06-26T23:06:39+00:00">2023</time>
+    Menoua Keshishian. All rights reserved.</small>
+</footer>
+
+</article>
+
+      </div>
+    </div>
+  </div>
+  <script src="/assets/js/bootstrap.min.js"></script>
+  
+  <script src="/assets/js/darkmode.js"></script>
+  
+  
+</body>
+
+</html>

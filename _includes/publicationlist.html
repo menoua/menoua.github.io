@@ -1,0 +1,16 @@
+{% assign publications = site.publications | sort: 'month' | sort: 'year' | reverse %}
+
+<div class="publications">
+  {% for paper in publications %}
+  <p>
+    <a href="{{ paper.link }}"> {{ paper.title }}. </a>
+    <span class="authors"> {{ paper.authors }}. </span>
+    <span class="journal">
+      {{ paper.journal }}{% if paper.year %} ({{ paper.year }}){% endif %}
+    </span>
+    <!-- {% if paper.doi %} -->
+    <!--   <br /><span class="doi">DOI: {{ paper.doi }} </span> -->
+    <!-- {% endif %} -->
+  </p>
+  {% endfor %}
+</div>

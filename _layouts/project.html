@@ -1,0 +1,55 @@
+---
+layout: default
+---
+
+{% assign publications = site.publications
+  | where_exp:"paper", "paper.tags contains page.tag" 
+  | sort: 'month' | sort: 'year' | reverse
+%}
+{% assign content = page.content
+  | strip_newlines
+%}
+
+<article>
+  {% include header.html %}
+  <main>
+    <div class="project-title-row">
+      <div class="project-title">
+        <h1 class="post-title">{{ page.title }}</h1>
+      </div>
+      <div class="project-links">
+        {% if page.code %}<a href={{ page.code }}>[Code]</a>{% endif %}
+        {% if page.docs %}<a href={{ page.docs }}>[Docs]</a>{% endif %}
+        {% if page.webpage %}<a href={{ page.webpage }}>[Webpage]</a>{% endif %}
+      </div>
+    </div>
+    {% if page.subtitle %}
+    <div class="project-subtitle">{{ page.subtitle }}</div>
+    {% endif %}
+
+    <img
+      src="{{ page.photo }}"
+      style="float: left; margin-right: 10px;"
+    />
+
+    {% if content == "" %}
+      <p>{{ page.description}}</p>
+    {% else %}
+      {{ content }}
+    {% endif %}
+
+    {% if publications != empty %}
+      <h2>Related publications</h2>
+      {% for paper in publications %}
+        <p>
+          <a href="{{ paper.link }}"> {{ paper.title }}. </a>
+          <span class="authors"> {{ paper.authors }}. </span>
+          <span class="journal">
+            {{ paper.journal }}{% if paper.year %} ({{ paper.year }}){% endif %}
+          </span>
+        </p>
+      {% endfor %}
+    {% endif %}
+  </main>
+  {% include footer.html %}
+</article>
