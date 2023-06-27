@@ -125,10 +125,10 @@ Tehran, Iran
 
 ## Skills
 
-##### Programming languages (years experience)
+__Programming languages (years experience)__<br/>
 Python (10), Rust (2), MATLAB (10), Java (5), C++ (5).
 
-##### ML frameworks
+__ML frameworks__<br/>
 PyTorch, TensorFlow, HuggingFace Transformers, scikit-learn.
 
 ## Teaching Experience
