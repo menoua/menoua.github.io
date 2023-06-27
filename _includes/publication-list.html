@@ -1,4 +1,6 @@
-{% assign publications = site.publications | sort: 'month' | sort: 'year' | reverse %}
+{% assign publications = site.publications
+  | sort: 'month' | sort: 'year' | reverse
+%}
 
 <div class="publications">
   {% for paper in publications %}

@@ -1,4 +1,7 @@
-{% assign personal = site.projects | where:"type", "side" | reverse %}
+{% assign personal = site.projects
+  | where: "type", "side"
+  | sort: "sort_key" | reverse
+%}
 
 <div class="projects">
   {% for project in personal %}

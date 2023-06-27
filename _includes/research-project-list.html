@@ -1,4 +1,7 @@
-{% assign research = site.projects | where:"type", "research" | reverse %}
+{% assign research = site.projects
+  | where: "type", "research"
+  | sort: "sort_key" | reverse
+%}
 
 <div class="projects">
   {% for project in research %}
