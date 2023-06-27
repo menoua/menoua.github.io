@@ -13,4 +13,14 @@ learning methods to study how the human auditory cortex analyzes the acoustic an
 linguistic content of speech as it is processed through the auditory pathway. 
 [Click here](/cv) to see my full CV, and [here](/cv.pdf) to download a print version.
 
-{% include projectlist.html %}
+# Research Projects
+
+{% include research-project-list.html %}
+
+# Side Projects
+
+{% include side-project-list.html %}
+
+# Publications
+
+{% include publication-list.html %}

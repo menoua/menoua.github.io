@@ -1,0 +1,17 @@
+{% assign research = site.projects | where:"type", "research" | reverse %}
+
+<div class="projects">
+  {% for project in research %}
+  <div class="project-row">
+    <div class="project-icon">
+      {% if project.photo %}
+      <img class="project-photo" src="{{ project.photo }}" />
+      {% endif %}
+    </div>
+    <div class="project-description">
+      <a href="{{ project.url | relative_url }}"> {{ project.title }}. </a>
+      <span class="authors"> {{ project.description }} </span>
+    </div>
+  </div>
+  {% endfor %}
+</div>

@@ -63,7 +63,7 @@ __Institute for Research in Fundamental Sciences, Brain Eng. Center__, Tehran, I
 
 ## Publications
 
-{% include publicationlist.html %}
+{% include publication-list.html %}
 
 ## Skills
 
