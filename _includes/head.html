@@ -20,24 +20,15 @@
   <link rel="manifest" href="{{ '/assets/site.webmanifest' | relative_url }}">
   <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ 'atom.xml' | relative_url }}">
 
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      jax: ["input/TeX", "output/HTML-CSS"],
-      tex2jax: {
-        inlineMath: [ ['$', '$'], ["\\(", "\\)"] ],
-        displayMath: [ ['$$', '$$'], ["\\[", "\\]"] ],
-        processEscapes: true,
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-      }
-      //,
-      //displayAlign: "left",
-      //displayIndent: "2em"
-    });
-  </script>
-  <script
-    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"
-    type="text/javascript" >
-  </script>
-
-  {% seo title=false %}
+  <!-- for mathjax support -->
+  {% if page.usemathjax %}
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+      TeX: { equationNumbers: { autoNumber: "AMS" } }
+      });
+    </script>
+    <script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  {% endif %}
+  
+  {% seo %}
 </head>

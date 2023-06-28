@@ -1,7 +1,8 @@
 # site settings
 
 title: Menoua Keshishian
-description: PhD Candidate, Columbia University
+description: "Personal website of Menoua Keshishian, PhD Candidate in 
+  Electrical Engineering at Columbia University."
 taglong: PhD Candidate, Columbia University
 tagshort: PhD Candidate
 url: https://menoua.github.io
@@ -15,6 +16,16 @@ collections:
     output: true
     sort_by: sort_key
 
+# search engine optimization
+
+tagline: PhD Candidate, Columbia University
+social:
+  name: Menoua Keshishian
+  links:
+    - https://www.linkedin.com/in/menoua
+    - https://github.com/menoua
+google_site_verification: Z7GXXpyCGsWjmtMl49QE2hOhjOtZCQfHrC2FxXCnGuI
+
 # author settings
 
 author:
@@ -27,6 +38,8 @@ photo: /assets/photo.png
 exclude:
   - LICENSE
   - README.md
+
+markdown: kramdown
 
 plugins:
   - jekyll-feed

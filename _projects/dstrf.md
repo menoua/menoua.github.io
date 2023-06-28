@@ -11,6 +11,7 @@ subtitle: Toolbox for analyzing local spectro-temoral receptive field of neurons
 description: "A python toolbox to analyze feed forward neural networks trained
     to predict biological neural responses to sound, by computing the locally
     linear operations they perform on the input."
+usemathjax: true
 ---
 
 A python toolbox for dynamic spectrotemporal receptive field (dSTRF) analysis, as 
