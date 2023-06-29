@@ -21,6 +21,6 @@ with a wide variety of data modalities, enabling the easy transfer of methods
 and code between researchers in the field of auditory neuroscience.
 
 This package was built by the [Neural Acoustic Processing Lab](
-http://naplab.ee.columbia.edu/) at Columbia University. We primarily use it 
-for processing neural data coming from ECoG and EEG in order to study the 
-auditory cortex.
+http://naplab.ee.columbia.edu/) at Columbia University. I contributed to its 
+design, development and maintenance. We primarily use it for processing neural 
+data coming from ECoG and EEG in order to study the auditory cortex.
