@@ -6,6 +6,7 @@ description: "Personal website of Menoua Keshishian, PhD Candidate in
 taglong: PhD Candidate, Columbia University
 tagshort: PhD Candidate
 url: https://menoua.github.io
+logo: /assets/favicon.png
 baseurl: ""
 permalink: /:categories/:title/
 repo: https://github.com/menoua/menoua.github.io
