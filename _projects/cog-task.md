@@ -1,7 +1,7 @@
 ---
 layout: project
 title: CogTask
-photo: /assets/cog-task.png
+image: /assets/cog-task.png
 tag: cog-task
 type: side
 code: https://github.com/menoua/cog-task

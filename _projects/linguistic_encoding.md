@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Linguistic encoding
-photo: /assets/linguistic-encoding.png
+image: /assets/linguistic-encoding.png
 tag: linguistic-encoding
 type: research
 sort_key: 4

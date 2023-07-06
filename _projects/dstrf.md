@@ -1,7 +1,7 @@
 ---
 layout: project
 title: dSTRF
-photo: /assets/dstrf.png
+image: /assets/dstrf.png
 tag: dstrf
 type: research
 code: https://github.com/naplab/DSTRF

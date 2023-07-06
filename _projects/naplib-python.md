@@ -1,7 +1,7 @@
 ---
 layout: project
 title: naplib-python
-photo: /assets/naplib.png
+image: /assets/naplib.png
 tag: naplib
 type: research
 code: https://github.com/naplab/naplib-python

@@ -1,7 +1,7 @@
 ---
 layout: project
 title: PyTCI
-photo: /assets/pytci.png
+image: /assets/pytci.png
 tag: pytci
 type: research
 code: https://github.com/naplab/PyTCI
