@@ -129,7 +129,7 @@ __Programming languages (years experience)__<br/>
 Python (10), Rust (2), MATLAB (10), Java (5), C++ (5).
 
 __ML frameworks__<br/>
-PyTorch, TensorFlow, HuggingFace Transformers, scikit-learn.
+PyTorch, TensorFlow, Hugging Face Transformers, scikit-learn.
 
 ## Teaching Experience
 
