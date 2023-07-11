@@ -3,7 +3,13 @@ layout: cv
 title: CV
 ---
 
-# Curriculum Vitæ [<i class="fa fa-file-pdf-o" style="font-size: 0.8em"></i>](/cv.pdf)
+<h1>
+    Curriculum Vitæ
+    &nbsp;
+    <a href="/cv.pdf" aria-label="Print version" id="cv-pdf-link">
+    <i class="fa fa-file-pdf-o pdf-icon" aria-hidden="true" title="Print version"></i>
+    </a>
+</h1>
 
 {% include contact.html %}
 
