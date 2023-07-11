@@ -3,7 +3,7 @@ layout: cv
 title: CV
 ---
 
-# Curriculum Vitæ
+# Curriculum Vitæ [<i class="fa fa-file-pdf-o" style="font-size: 0.8em"></i>](/cv.pdf)
 
 {% include contact.html %}
 
@@ -95,11 +95,11 @@ __Columbia University, Department of Electrical Eng.__, New York, NY
 <table class="two-column no-gap-before">
 <tbody>
 <tr>
-    <td>MS Award of Excellence<br/><em>(awarded to fewer than 5% of EE MS candidates)</em></td>
+    <td>MS Award of Excellence <em>(awarded to fewer than 5% of EE MS candidates)</em></td>
     <td style="text-align: right">2020</td>
 </tr>
 <tr>
-    <td>MS Armstrong Memorial Award<br/><em>(awarded to one outstanding EE MS candidate)</em></td>
+    <td>MS Armstrong Memorial Award <em>(awarded to one outstanding EE MS candidate)</em></td>
     <td style="text-align: right">2019</td>
 </tr>
 </tbody>
@@ -109,7 +109,7 @@ Tehran, Iran
 <table class="two-column no-gap-before">
 <tbody>
 <tr>
-    <td>33rd place in Iran’s Nationwide University Entrance Exam<br/><em>(top 0.01%)</em></td>
+    <td>33rd place in Iran’s Nationwide University Entrance Exam <em>(top 0.01%)</em></td>
     <td style="text-align: right">2012</td>
 </tr>
 <tr>
