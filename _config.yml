@@ -43,14 +43,16 @@ exclude:
 markdown: kramdown
 
 plugins:
-  # - jekyll-feed
   - jekyll-gist
-  # - jekyll-paginate-v2
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-redirect-from
 
 whitelist:
+  - jekyll-gist
+  - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-redirect-from
 
 sass:
   sass_dir: _sass
