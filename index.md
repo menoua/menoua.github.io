@@ -11,7 +11,8 @@ is a part of the Zuckerman Mind Brain Behavior Institute. I am interested in the
 processing of speech and language in the human brain. Specifically, I use machine 
 learning methods to study how the human auditory cortex analyzes the acoustic and 
 linguistic content of speech as it is processed through the auditory pathway. 
-[Click here](/cv) to see my full CV, and [here](/cv.pdf) to download a print version. 
+[Click here](/cv.pdf) to see my full CV.
+
 Below is a list of my projects and publications.
 
 ## Research Projects
